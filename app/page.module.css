@@ -1,10 +1,37 @@
 .main {
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  flex-direction: row;
+  justify-content: center;
   align-items: center;
   padding: 6rem;
   min-height: 100vh;
+  background-color: #f4f4f4;
+}
+
+.center {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 6rem;
+  min-height: 100vh;
+  background-color: #f4f4f4;
+}
+
+.text{
+  
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #333333;
+  margin-bottom: 1rem;
+  text-align: left;
+}
+
+.image {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  margin-right: 2rem;
 }
 
 .description {
@@ -71,7 +98,7 @@
   line-height: 1.5;
   max-width: 30ch;
 }
-
+/* 
 .center {
   display: flex;
   justify-content: center;
@@ -102,7 +129,7 @@
   position: absolute;
   filter: blur(45px);
   transform: translateZ(0);
-}
+} */
 
 .logo {
   position: relative;
