@@ -5,7 +5,7 @@ import Link from "next/link";
 function page() {
   return (
     <div className={styles.navbar}>
-      <div className={styles.logo}>logo</div>
+      <Link href="/" className={styles.logo}>logo</Link>
       <div className={styles.links}>
         <Link href="/about">about</Link>
         <Link href="/work">work</Link>
