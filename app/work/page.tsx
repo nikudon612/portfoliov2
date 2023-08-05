@@ -1,8 +1,9 @@
 import React from 'react'
+import styles from './work.module.scss'
 
 function page() {
   return (
-    <div>work</div>
+    <div className={styles.work}>work</div>
   )
 }
 

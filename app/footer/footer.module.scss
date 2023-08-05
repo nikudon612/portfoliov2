@@ -15,4 +15,8 @@
 
 .links {
   margin: 0 30px;
+  &:hover {
+    color: #aaaaaa !important;
+    transition: 0.3s ease-in-out;
+  }
 }
