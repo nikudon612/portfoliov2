@@ -17,6 +17,7 @@ function about() {
           innovative and visually appealing web applications.
         </div>
         <div className={styles.text}>More info about my background</div>
+        <div className={styles.text}>Outside of work, I like to spend as much time as I can away from my laptop, traveling and getting outside with my camera. I most enjoy shooting on one of my many older film cameras such as the Canon A1 or Mamiya RZ67.</div>
         <div className={styles.text}>
           In my freetime, I enjoy a Matcha latte, taking photos on one of my
           many old film cameras, or if there's a swell, surfing at Rockaway

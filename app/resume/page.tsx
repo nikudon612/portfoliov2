@@ -1,8 +1,9 @@
 import React from 'react'
+import styles from './resume.module.scss'
 
 function page() {
   return (
-    <div>resume</div>
+    <div className={styles.resume}>resume</div>
   )
 }
 
