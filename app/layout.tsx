@@ -14,6 +14,10 @@ const roboto = Roboto_Mono({
 })
 
 export const metadata: Metadata = {
+  icons: {
+    icon: "/Nick.png",
+    apple: "/apple-touch-icon.png",
+  },
   title: "Nick Bechtel - Software Engineer",
   description: "Nick Bechtel - Software Engineer - Portfolio - Resume",
 };
