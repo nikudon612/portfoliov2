@@ -16,6 +16,7 @@
   padding: 6rem;
   min-height: 100vh;
   background-color: #f4f4f4;
+  margin-bottom: 200px;
 }
 
 .text{
@@ -25,6 +26,19 @@
   color: #333333;
   margin-bottom: 1rem;
   text-align: left;
+}
+.intro {
+  font-size: 40px;
+  font-weight: 400;
+}
+.name {
+  font-weight: 700;
+  font-size: larger;
+}
+.period {
+  font-weight: 400;
+  font-size: larger;
+  color: #616161;
 }
 
 .image {
