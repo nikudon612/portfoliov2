@@ -13,14 +13,15 @@
   display: flex;
   flex-direction: row;
 }
-.project {
-  padding: 40px;
-  //   width: 500px;
-}
+// .project {
+//   padding: 40px;
+//   //   width: 500px;
+// }
 
-.link {
-  width: 500px;
-}
+// .link {
+//   width: 500px;
+//   }
+// }
 
 .img_container {
   overflow: hidden;
@@ -28,18 +29,73 @@
   width: 500px;
   height: 300px;
 }
-.img {
-  object-fit: fill;
-}
-.title {
-  text-align: left;
-  font-size: 20px;
-  font-weight: 800;
-  padding-top: 20px;
-}
-.text {
-  padding-top: 5px;
-  color: #aaa;
-  font-size: 14px;
-  width: 500px;
+// .img {
+//   object-fit: fill;
+// }
+// .title {
+//   text-align: left;
+//   font-size: 20px;
+//   font-weight: 800;
+//   padding-top: 20px;
+// }
+// .text {
+//   padding-top: 5px;
+//   color: #aaa;
+//   font-size: 14px;
+//   width: 500px;
+// }
+
+
+.project {
+  padding: 40px;
+  
+  .link {
+    display: block;
+    position: relative;
+    // width: 500px;
+    // height: 300px;
+    overflow: hidden;
+
+    .img {
+      object-fit: cover;
+      transition: opacity 0.3s ease-in-out;
+    }
+
+    &:hover .img {
+      opacity: 0.8; /* Adjust opacity as needed */
+      background-color: rgba(51, 87, 44, 0.325);
+    }
+
+    /* Overlay */
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(51, 87, 44, 0.325);
+      opacity: 0;
+      transition: opacity 0.3s ease-in-out;
+      z-index: 1; /* Place overlay above the image */
+    }
+
+    &:hover::before {
+      // opacity: 1;
+    }
+  }
+
+  .title {
+    text-align: left;
+    font-size: 20px;
+    font-weight: 800;
+    padding-top: 20px;
+  }
+
+  .text {
+    padding-top: 5px;
+    color: #aaa;
+    font-size: 14px;
+    width: 500px;
+  }
 }

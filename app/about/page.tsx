@@ -23,7 +23,7 @@ function about() {
           to crafting exceptional user experiences drives me to deliver
           innovative and visually appealing web applications.
         </div>
-        <div className={styles.text}>More info about my background</div>
+        <div className={styles.text}>More info about my background~</div>
         <div className={styles.text}>
           Outside of work, I like to spend as much time as I can away from my
           laptop, traveling and getting outside with my camera. I most enjoy
@@ -42,9 +42,8 @@ function about() {
           .
         </div>
         <div className={styles.text}>
-          In my freetime, I enjoy a Matcha latte, taking photos on one of my
-          many old film cameras, or if there's a swell, surfing at Rockaway
-          Beach
+          Otherwise, I enjoy a Matcha latte, or if there's a swell, surfing at
+          Rockaway Beach.
         </div>
         <div className={styles.text}>...yes, NYC actually has decent surf!</div>
       </div>

@@ -27,9 +27,12 @@
   align-items: center;
   justify-content: space-evenly;
   flex-direction: row;
-  width: 25%;
+  // margin-top: 20px;
+  // margin-bottom: 20px;
+  margin-right: 5%;
 }
 .link {
+  margin: 0 30px;
   &:hover {
     // color: #aaaaaa !important;
     color: var(--olive);
