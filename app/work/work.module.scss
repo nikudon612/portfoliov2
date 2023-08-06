@@ -63,7 +63,17 @@
 
     &:hover .img {
       opacity: 0.8; /* Adjust opacity as needed */
-      background-color: rgba(51, 87, 44, 0.325);
+    }
+
+    &:hover .title {
+      opacity: .8;
+      transition: opacity 0.3s ease-in-out;
+      color: var(--olive);
+    }
+    &:hover .text {
+      opacity: .8;
+      color: var(--olive);
+      transition: opacity 0.3s ease-in-out;
     }
 
     /* Overlay */
