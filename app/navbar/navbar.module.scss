@@ -12,6 +12,7 @@
   flex-direction: row;
   justify-content: space-between;
   background-color: #f4f4f4;
+  padding-left: 5%;
 }
 
 .logo {
@@ -19,8 +20,6 @@
   align-items: center;
   justify-content: space-between;
   flex-direction: row;
-  width: 25%;
-  padding-left: 5%;
 }
 
 .links {
@@ -32,7 +31,8 @@
 }
 .link {
   &:hover {
-    color: #aaaaaa !important;
+    // color: #aaaaaa !important;
+    color: var(--olive);
     transition: 0.3s ease-in-out;
   }
 }
