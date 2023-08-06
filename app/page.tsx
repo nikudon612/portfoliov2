@@ -10,7 +10,7 @@ export default function Home() {
           <div className={styles.intro}>
             Hi, my name is <span className={styles.name}>Nick</span><span className={styles.period}>.</span>
           </div>
-          <div>I'm a software engineer based in New York City</div>
+          <div>I'm a <span className={styles.title}>software engineer</span> based in New York City</div>
         </div>
         <div className={styles.image}>
           <Image

@@ -9,3 +9,35 @@
     height: 100vh;
     // padding-top:100px;
 }
+.work_container {
+    
+}
+.project {
+    // display: flex;
+    // flex-direction: column;
+    // align-items: flex-start;
+    // overflow: hidden;
+    // position: absolute;
+    // width: 500px;
+    // height: 300px;
+}
+.img_container {
+   overflow: hidden;
+    position: relative;
+    width: 500px;
+    height: 300px;
+}
+.img {
+    object-fit: fill;
+}
+.title {
+    text-align: left;
+    font-size: 20px;
+    font-weight: 800;
+    padding-top: 20px;
+}
+.text{
+    padding-top: 5px;
+    color: #aaa;
+    font-size: 14px;
+}
