@@ -5,7 +5,6 @@
   align-items: center;
   padding: 6rem;
   height: 100vh;
-  /* background-color: #f4f4f4; */
 }
 
 .center {
@@ -15,7 +14,6 @@
   align-items: center;
   padding: 6rem;
   min-height: 100vh;
-  /* background-color: #f4f4f4; */
   margin-bottom: 200px;
   
 }

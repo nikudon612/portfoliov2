@@ -3,16 +3,16 @@ import type { Metadata } from "next";
 import React from "react";
 import Navbar from "./navbar/navbar";
 import Footer from "./footer/footer";
-
-import { Inter, Roboto_Mono } from 'next/font/google'
+import PageWrapper from "./pagewrapper";
+import { Inter, Roboto_Mono } from "next/font/google";
 import { url } from "inspector";
- 
+
 // If loading a variable font, you don't need to specify the font weight
-const inter = Inter({ subsets: ['latin'] })
+const inter = Inter({ subsets: ["latin"] });
 const roboto = Roboto_Mono({
-  weight: '400' ,
-  subsets: ['latin'],
-})
+  weight: "400",
+  subsets: ["latin"],
+});
 
 export const metadata: Metadata = {
   icons: {
@@ -29,12 +29,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <div className={roboto.className} 
-    style={{backgroundColor: "f4f4f4"}}
-    // style={{backgroundImage: `url(/sisi.jpg)`, backgroundSize: 'cover'}}
+    <div
+      className={roboto.className}
+      style={{ backgroundColor: "f4f4f4" }}
+      // style={{backgroundImage: `url(/sisi.jpg)`, backgroundSize: 'cover'}}
     >
       <Navbar />
-      <main className="children">{children}</main>
+        <main className="children">{children}</main>
       <Footer />
     </div>
   );
