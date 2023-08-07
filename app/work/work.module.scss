@@ -13,15 +13,6 @@
   display: flex;
   flex-direction: row;
 }
-// .project {
-//   padding: 40px;
-//   //   width: 500px;
-// }
-
-// .link {
-//   width: 500px;
-//   }
-// }
 
 .img_container {
   overflow: hidden;
@@ -29,26 +20,10 @@
   width: 500px;
   height: 300px;
 }
-// .img {
-//   object-fit: fill;
-// }
-// .title {
-//   text-align: left;
-//   font-size: 20px;
-//   font-weight: 800;
-//   padding-top: 20px;
-// }
-// .text {
-//   padding-top: 5px;
-//   color: #aaa;
-//   font-size: 14px;
-//   width: 500px;
-// }
-
 
 .project {
   padding: 40px;
-  
+
   .link {
     display: block;
     position: relative;
@@ -66,12 +41,12 @@
     }
 
     &:hover .title {
-      opacity: .8;
+      opacity: 0.8;
       transition: opacity 0.3s ease-in-out;
       color: var(--olive);
     }
     &:hover .text {
-      opacity: .8;
+      opacity: 0.8;
       color: var(--olive);
       transition: opacity 0.3s ease-in-out;
     }

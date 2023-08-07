@@ -5,17 +5,17 @@ import Link from "next/link";
 
 const projects = [
   {
-    name: "The Dinner Party",
-    desc: "Frontend UI & Backend API integration",
-    img: "/dinnerparty.png",
-    link: "https://thedinnerparty.forerunnerventures.com/",
-    key: 1,
-  },
-  {
     name: "Forerunner Ventures",
     desc: "UI Redesign, Frontend Development and Backend API integration",
     img: "/forerunner.png",
     link: "https://www.forerunnerventures.com/",
+    key: 1,
+  },
+  {
+    name: "The Dinner Party",
+    desc: "Frontend UI & Backend API integration",
+    img: "/dinnerparty.png",
+    link: "https://thedinnerparty.forerunnerventures.com/",
     key: 2,
   },
   {
@@ -33,7 +33,12 @@ function page() {
       <div className={styles.work_container}>
         {projects.map((item) => (
           <div className={styles.project}>
-            <Link href={item.link} target="__blank" rel="nonferrer" className={styles.link}>
+            <Link
+              href={item.link}
+              target="__blank"
+              rel="nonferrer"
+              className={styles.link}
+            >
               <div className={styles.img_container}>
                 <Image
                   src={item.img}

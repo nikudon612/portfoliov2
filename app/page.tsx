@@ -1,10 +1,11 @@
 import Image from "next/image";
 import styles from "./page.module.css";
+import BG from '../public/sisi.jpg'
 
 
 export default function Home() {
   return (
-    <div className={styles.main}>
+    <div className={styles.main} style={{backgroundImage: `url(${BG})`}}>
       <div className={styles.center}>
         <div className={styles.text}>
           <div className={styles.intro}>

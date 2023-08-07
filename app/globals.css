@@ -109,3 +109,8 @@ a {
     color-scheme: dark;
   }
 } */
+
+.children {
+  /* background-image: url("/sisi.jpg"); */
+  background-size: cover;
+}
