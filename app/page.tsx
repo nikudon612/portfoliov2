@@ -1,10 +1,7 @@
-"use client";
-
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import styles from "./page.module.css";
 import { motion, AnimatePresence } from "framer-motion";
-import PageWrapper from "./pagewrapper";
 
 export default function Home() {
   return (
