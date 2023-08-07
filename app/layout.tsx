@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 import React from "react";
 import Navbar from "./navbar/navbar";
 import Footer from "./footer/footer";
-import PageWrapper from "./pagewrapper";
+// import PageWrapper from "./pagewrapper";
 import { Inter, Roboto_Mono } from "next/font/google";
 import { url } from "inspector";
 
