@@ -1,4 +1,3 @@
-
 import React from "react";
 import styles from "./navbar.module.scss";
 import Link from "next/link";
@@ -13,7 +12,6 @@ function page() {
         <Link href="/about" className={styles.link}>
           about
         </Link>
-
         <Link href="/work" className={styles.link}>
           work
         </Link>

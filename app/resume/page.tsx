@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./resume.module.scss";
 import Image from "next/image";
+
 function page() {
   return (
     <div className={styles.resume}>

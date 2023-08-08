@@ -1,7 +1,5 @@
-import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import styles from "./page.module.css";
-import { motion, AnimatePresence } from "framer-motion";
 
 export default function Home() {
   return (

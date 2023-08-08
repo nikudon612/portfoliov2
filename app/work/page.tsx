@@ -3,31 +3,30 @@ import styles from "./work.module.scss";
 import Image from "next/image";
 import Link from "next/link";
 
-const projects = [
-  {
-    name: "Forerunner Ventures",
-    desc: "UI Redesign, Frontend Development and Backend API integration",
-    img: "/forerunner.png",
-    link: "https://www.forerunnerventures.com/",
-    key: 1,
-  },
-  {
-    name: "The Dinner Party",
-    desc: "Frontend UI & Backend API integration",
-    img: "/dinnerparty.png",
-    link: "https://thedinnerparty.forerunnerventures.com/",
-    key: 2,
-  },
-  {
-    name: "Dept. of Music",
-    desc: "UI/UX design, Frontend Development and Backend API integration",
-    img: "/dom.png",
-    link: "https://www.deptofmusic.com/",
-    key: 3,
-  },
-];
-
 function page() {
+  const projects = [
+    {
+      name: "Forerunner Ventures",
+      desc: "UI Redesign, Frontend Development and Backend API integration",
+      img: "/forerunner.png",
+      link: "https://www.forerunnerventures.com/",
+      key: 1,
+    },
+    {
+      name: "The Dinner Party",
+      desc: "Frontend UI & Backend API integration",
+      img: "/dinnerparty.png",
+      link: "https://thedinnerparty.forerunnerventures.com/",
+      key: 2,
+    },
+    {
+      name: "Dept. of Music",
+      desc: "UI/UX design, Frontend Development and Backend API integration",
+      img: "/dom.png",
+      link: "https://www.deptofmusic.com/",
+      key: 3,
+    },
+  ];
   return (
     <div className={styles.work}>
       <div className={styles.work_container}>
