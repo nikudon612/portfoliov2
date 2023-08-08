@@ -33,9 +33,9 @@ export default function RootLayout({
         style={{ backgroundColor: "f4f4f4" }}
         // style={{backgroundImage: `url(/sisi.jpg)`, backgroundSize: 'cover'}}
       >
-        {/* <Navbar /> */}
+        <Navbar />
         <main className="children">{children}</main>
-        {/* <Footer /> */}
+        <Footer />
       </div>
     </html>
   );
