@@ -2,8 +2,15 @@ import React from "react";
 import styles from "./about.module.scss";
 import Image from "next/image";
 import Link from "next/link";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Nick Bechtel - About",
+  description: "Nick Bechtel - Software Engineer - Portfolio - Resume",
+};
 
 function about() {
+  
   return (
     <div className={styles.about}>
       <div className={styles.center}>

@@ -1,6 +1,12 @@
 import React from "react";
 import styles from "./resume.module.scss";
 import Image from "next/image";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Nick Bechtel - Resume",
+  description: "Nick Bechtel - Software Engineer - Portfolio - Resume",
+};
 
 function page() {
   return (

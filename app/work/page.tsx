@@ -2,6 +2,12 @@ import React from "react";
 import styles from "./work.module.scss";
 import Image from "next/image";
 import Link from "next/link";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Nick Bechtel - Work",
+  description: "Nick Bechtel - Software Engineer - Portfolio - Resume",
+};
 
 function page() {
   const projects = [
