@@ -1,7 +1,7 @@
 import "./globals.css";
 import type { Metadata } from "next";
 import React from "react";
-import Navbar from "./navbar/navbar";
+import Navbar from "./navbar/page";
 import Footer from "./footer/footer";
 import { Inter, Roboto_Mono } from "next/font/google";
 
@@ -27,16 +27,27 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html>
-      <div
-        className={roboto.className}
-        style={{ backgroundColor: "f4f4f4" }}
-        // style={{backgroundImage: `url(/sisi.jpg)`, backgroundSize: 'cover'}}
-      >
+    <html
+      lang="en"
+      className={roboto.className}
+      style={{ backgroundColor: "f4f4f4" }}
+    >
+      <body>
         <Navbar />
-        <main className="children">{children}</main>
+        {children}
         <Footer />
-      </div>
+      </body>
     </html>
+    // <html>
+    //   <div
+    //     className={roboto.className}
+    //     style={{ backgroundColor: "f4f4f4" }}
+    //     // style={{backgroundImage: `url(/sisi.jpg)`, backgroundSize: 'cover'}}
+    //   >
+    //     <Navbar />
+    //     <main className="children">{children}</main>
+    //     <Footer />
+    //   </div>
+    // </html>
   );
 }

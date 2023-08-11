@@ -53,9 +53,15 @@ function projects() {
       <AnimatePresence>
         {projects.map((item) => (
           <motion.div
-            variants={images}
-            // initial="hidden"
-            // animate="show"
+            key={item.key}
+            initial={false}
+            animate={{
+              opacity: 1,
+              transition: {
+                duration: 1,
+                delay: item.key * 0.2,
+              },
+            }}
             className={styles.project}
           >
             <Link
