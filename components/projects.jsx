@@ -54,7 +54,7 @@ function projects() {
         {projects.map((item) => (
           <motion.div
             key={item.key}
-            initial={false}
+            initial={{ opacity: 0 }}
             animate={{
               opacity: 1,
               transition: {

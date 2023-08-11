@@ -38,16 +38,5 @@ export default function RootLayout({
         <Footer />
       </body>
     </html>
-    // <html>
-    //   <div
-    //     className={roboto.className}
-    //     style={{ backgroundColor: "f4f4f4" }}
-    //     // style={{backgroundImage: `url(/sisi.jpg)`, backgroundSize: 'cover'}}
-    //   >
-    //     <Navbar />
-    //     <main className="children">{children}</main>
-    //     <Footer />
-    //   </div>
-    // </html>
   );
 }
