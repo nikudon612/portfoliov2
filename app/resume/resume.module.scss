@@ -9,3 +9,14 @@
     text-align: center;
     height: 100dvh;
 }
+
+@media (max-width: 900px) {
+    .resume {
+        padding: 0 1rem;
+        height: calc(100vh - 200px);
+    }
+    .image {
+        max-width: 400px;
+        max-height: 550px;
+    }
+}

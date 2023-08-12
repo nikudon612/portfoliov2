@@ -25,7 +25,7 @@ function page() {
           },
         }}
       >
-        <Image src="/resume.png" alt="resume" width={800} height={1100} />
+        <Image src="/resume.png" alt="resume" width={800} height={1100} className={styles.image} />
       </motion.div>
     </div>
   );
