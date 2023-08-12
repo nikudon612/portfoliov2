@@ -9,7 +9,7 @@ function projects() {
   const projects = [
     {
       name: "Forerunner Ventures",
-      desc: "UI Redesign, Frontend Development and Backend API integration",
+      desc: "UX/UI Redesign, Frontend Development and Backend API integration",
       img: "/forerunner.png",
       link: "https://www.forerunnerventures.com/",
       key: 1,
@@ -23,7 +23,7 @@ function projects() {
     },
     {
       name: "Dept. of Music",
-      desc: "UI/UX design, Frontend Development and Backend API integration",
+      desc: "UX/UXI design, Frontend Development and Backend API integration",
       img: "/dom.png",
       link: "https://www.deptofmusic.com/",
       key: 3,
