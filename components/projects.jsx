@@ -5,25 +5,6 @@ import Image from "next/image";
 import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
 
-const variants = {
-  hidden: { opacity: 0 },
-  show: { opacity: 1 },
-};
-
-const images = {
-  hidden: {
-    opacity: 0,
-    y: 30,
-  },
-  show: {
-    opacity: 1,
-    y: 0,
-    transition: {
-      duration: 1,
-    },
-  },
-};
-
 function projects() {
   const projects = [
     {
