@@ -64,6 +64,7 @@ export default function Home() {
               alt="Nick Bechtel - Portrait"
               width={500}
               height={500}
+              className={styles.image}
             />
           </motion.div>
         </div>

@@ -27,8 +27,17 @@
   }
 }
 
-@media (max-width: 1717px){
+@media (max-width: 717px){
   .footer {
     // padding-top: 100px;
+    padding-bottom: 50px;
+  }
+  .socials {
+    flex-direction: column;
+    align-items: normal;
+  }
+  .links {
+    margin-top: 10px;
+    text-align: left;
   }
 }

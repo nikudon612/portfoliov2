@@ -15,9 +15,9 @@ function page() {
         <Link href="/work" className={styles.link}>
           work
         </Link>
-        <Link href="/resume" className={styles.link}>
+        {/* <Link href="/resume" className={styles.link}>
           resume
-        </Link>
+        </Link> */}
       </div>
     </div>
   );

@@ -4,7 +4,7 @@
   justify-content: center;
   align-items: center;
   padding: 6rem;
-  height: 100vh;
+  height: calc(100vh - 200px);
   background-color: #f4f4f4;
 }
 
@@ -48,12 +48,12 @@
   font-weight: 900!important;
 }
 
-.image {
+/* .image {
   width: 100%;
   max-width: 400px;
   height: auto;
   margin-right: 2rem;
-}
+} */
 
 .description {
   display: inherit;
@@ -247,6 +247,21 @@
       rgb(var(--background-end-rgb)) 40%
     );
     z-index: 1;
+  }
+}
+
+
+
+@media (max-width: 900px) {
+  .center {
+    flex-direction: column!important;
+  }
+}
+
+@media (max-width: 587px) {
+  .image {
+    width: 250px;
+    height: 250px;
   }
 }
 
