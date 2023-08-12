@@ -1,30 +1,67 @@
+"use client";
+
 import Image from "next/image";
 import styles from "./page.module.css";
+import PageWrapper from "@/components/page-wrapper";
+import { motion } from "framer-motion";
 
 export default function Home() {
   return (
     <div className={styles.main}>
       <div className={styles.center}>
         <div className={styles.text}>
-          {/* <PageWrapper> */}
-            <div className={styles.intro}>
-              Hi, my name is <span className={styles.name}>Nick</span>
-              <span className={styles.period}>.</span>
-            </div>
-          {/* </PageWrapper> */}
-          <div>
-            I'm a <span className={styles.title}>software engineer</span> based
-            in New York City
-          </div>
+          <motion.div
+            className={styles.intro}
+            initial={{ opacity: 0, y: -20 }}
+            animate={{
+              opacity: 1,
+              y: 0,
+              transition: {
+                duration: 1,
+                delay: 0.1,
+              },
+            }}
+          >
+            Hi, my name is <span className={styles.name}>Nick</span>
+            <span className={styles.period}>.</span>
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, y: -20 }}
+            animate={{
+              opacity: 1,
+              y: 0,
+              transition: {
+                duration: 1,
+                delay: 0.75,
+              },
+            }}
+          >
+            I'm a{" "}
+            <motion.span className={styles.title}>
+              software engineer
+            </motion.span>{" "}
+            based in New York City
+          </motion.div>
         </div>
-        <div className={styles.image}>
+        <motion.div
+          className={styles.image}
+          initial={{ opacity: 0, y: -20 }}
+          animate={{
+            opacity: 1,
+            y: 0,
+            transition: {
+              duration: 1,
+              delay: 1.5,
+            },
+          }}
+        >
           <Image
             src="/Nick.png"
             alt="Nick Bechtel - Portrait"
             width={500}
             height={500}
           />
-        </div>
+        </motion.div>
       </div>
     </div>
   );
