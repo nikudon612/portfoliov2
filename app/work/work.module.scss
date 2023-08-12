@@ -6,7 +6,7 @@
   width: 100%;
   background-color: #f4f4f4;
   padding: 0 6rem 6rem 6rem;
-  // height: 100vh;
+  min-height: calc(100vh - 200px); /* Adjust footer height */
   // padding-top:100px;
 }
 .work_container {
