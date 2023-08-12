@@ -6,7 +6,7 @@
   justify-content: center;
   padding: 6rem;
   text-align: center;
-  // height: 100vh;
+  height: calc(100vh - 200px);
   flex-grow: 1; /* Allow the .about section to grow and take available space */
 
   // padding-bottom: 200px;
@@ -30,5 +30,22 @@
   &:hover {
     color: var(--olive);
     transition: 0.3s ease-in-out;
+  }
+}
+
+@media (max-width: 900px) {
+  .text {
+    font-size: 14px; /* Adjust the font size for smaller screens */
+  }
+
+  .polaroid {
+    max-width: 300px; /* Adjust the image max width for smaller screens */
+    max-height: 250px; /* Adjust the image max height for smaller screens */
+  }
+}
+
+@media (max-width: 717px) {
+  .about {
+    // padding: 2rem;
   }
 }
