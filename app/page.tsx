@@ -19,6 +19,8 @@ export default function Home() {
               transition: {
                 duration: 1,
                 delay: 0.25,
+                ease: [0.22, 1, 0.36, 1],
+
               },
             }}
           >
@@ -33,6 +35,8 @@ export default function Home() {
               transition: {
                 duration: 1,
                 delay: 0.75,
+                ease: [0.22, 1, 0.36, 1],
+
               },
             }}
           >
@@ -52,6 +56,8 @@ export default function Home() {
             transition: {
               duration: 1,
               delay: 1.5,
+              ease: [0.22, 1, 0.36, 1],
+
             },
           }}
         >

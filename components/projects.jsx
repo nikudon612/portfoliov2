@@ -29,6 +29,9 @@ function projects() {
       key: 3,
     },
   ];
+
+  const easeIn = [0.6, 0.05, -0.01, 0.9];
+
   return (
     <div className={styles.project_container}>
       <AnimatePresence>
@@ -40,7 +43,8 @@ function projects() {
               opacity: 1,
               transition: {
                 duration: 1,
-                delay: item.key * 0.2,
+                ease: [0.22, 1, 0.36, 1],
+                delay: item.key * 0.33,
               },
             }}
             className={styles.project}

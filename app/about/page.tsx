@@ -6,7 +6,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { Metadata } from "next";
 import PageWrapper from "@/components/page-wrapper";
-import { motion } from "framer-motion";
+import { motion, easeIn } from "framer-motion";
 
 // export const metadata: Metadata = {
 //   title: "Nick Bechtel - About",
@@ -14,6 +14,8 @@ import { motion } from "framer-motion";
 // };
 
 function about() {
+  // const easeIn = [0.6, 0.05, -0.01, 0.9];
+
   return (
     <PageWrapper>
       <div className={styles.about}>
@@ -25,6 +27,7 @@ function about() {
               y: 0,
               transition: {
                 duration: 1,
+                ease: [0.22, 1, 0.36, 1],
               },
             }}
           >
@@ -46,6 +49,7 @@ function about() {
               transition: {
                 duration: 1,
                 delay: 0.75,
+                ease: [0.22, 1, 0.36, 1],
               },
             }}
           >
@@ -83,6 +87,8 @@ function about() {
               y: 0,
               transition: {
                 duration: 1,
+                ease: [0.22, 1, 0.36, 1],
+
                 delay: 1,
               },
             }}
@@ -114,6 +120,8 @@ function about() {
               transition: {
                 duration: 1,
                 delay: 1.25,
+                ease: [0.22, 1, 0.36, 1],
+
               },
             }}
           >
