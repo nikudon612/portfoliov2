@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState, useEffect } from "react"; 
+import React, { useState, useEffect } from "react";
 import styles from "./navbar.module.scss";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
@@ -16,7 +16,6 @@ function page() {
       router.push(url); // Navigate to the new page
     }, 200); // Adjust the delay as needed
   };
-
 
   //close menu on resize
   useEffect(() => {
@@ -37,35 +36,51 @@ function page() {
 
   return (
     <div className={styles.navbar}>
-    <Link href="/" className={styles.logo}>
-      NB
-    </Link>
-    <div
-  className={`${styles.links} ${isMenuOpen ? `${styles.active}` : ""}`}
-  id="navLinks"
-  onClick={() => setIsMenuOpen(!isMenuOpen)} // Toggle menu open/close
-    >
-      {/* Your navigation links here */}
-      <Link href="/" className={styles.link} onClick={() => closeMenuAndNavigate("/")} >Home</Link>
-      <Link href="/about" className={styles.link} onClick={() => closeMenuAndNavigate("/about")} >
-        About
+      <Link href="/" className={styles.logo}>
+        NB
       </Link>
-      <Link href="/work" className={styles.link} onClick={() => closeMenuAndNavigate("/work")} >
-        Work
-      </Link>
-      {/* <Link href="/resume" className={styles.link}>
+      <div
+        className={`${styles.links} ${isMenuOpen ? `${styles.active}` : ""}`}
+        id="navLinks"
+        onClick={() => setIsMenuOpen(!isMenuOpen)} // Toggle menu open/close
+      >
+        {/* Your navigation links here */}
+        {isMenuOpen && (
+          <Link
+            href="/"
+            className={styles.link}
+            onClick={() => closeMenuAndNavigate("/")}
+          >
+            Home
+          </Link>
+        )}
+        <Link
+          href="/about"
+          className={styles.link}
+          onClick={() => closeMenuAndNavigate("/about")}
+        >
+          About
+        </Link>
+        <Link
+          href="/work"
+          className={styles.link}
+          onClick={() => closeMenuAndNavigate("/work")}
+        >
+          Work
+        </Link>
+        {/* <Link href="/resume" className={styles.link}>
         resume
       </Link> */}
+      </div>
+      <div
+        className={`${styles.hamburger} ${isMenuOpen ? styles.active : ""}`}
+        onClick={() => setIsMenuOpen(!isMenuOpen)} // Toggle menu open/close
+      >
+        <span className={styles.line}></span>
+        <span className={styles.line}></span>
+        <span className={styles.line}></span>
+      </div>
     </div>
-    <div
-      className={`${styles.hamburger} ${isMenuOpen ? styles.active : ""}`}
-      onClick={() => setIsMenuOpen(!isMenuOpen)} // Toggle menu open/close
-    >
-      <span className={styles.line}></span>
-      <span className={styles.line}></span>
-      <span className={styles.line}></span>
-    </div>
-  </div>
   );
 }
 
