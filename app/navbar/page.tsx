@@ -46,11 +46,12 @@ function page() {
   onClick={() => setIsMenuOpen(!isMenuOpen)} // Toggle menu open/close
     >
       {/* Your navigation links here */}
+      <Link href="/" className={styles.link} onClick={() => closeMenuAndNavigate("/")} >Home</Link>
       <Link href="/about" className={styles.link} onClick={() => closeMenuAndNavigate("/about")} >
-        about
+        About
       </Link>
       <Link href="/work" className={styles.link} onClick={() => closeMenuAndNavigate("/work")} >
-        work
+        Work
       </Link>
       {/* <Link href="/resume" className={styles.link}>
         resume
