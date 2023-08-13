@@ -28,6 +28,7 @@ export default function Home() {
               <span className={styles.period}>.</span>
             </motion.div>
             <motion.div
+              className={styles.title_container}
               initial={{ opacity: 0, y: -20 }}
               animate={{
                 opacity: 1,

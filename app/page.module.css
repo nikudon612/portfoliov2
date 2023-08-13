@@ -256,6 +256,12 @@
   .center {
     flex-direction: column!important;
   }
+  .main {
+    padding-top: 250px;
+  }
+  .title_container {
+    padding-top: 20px;
+  }
 }
 
 @media (max-width: 587px) {
