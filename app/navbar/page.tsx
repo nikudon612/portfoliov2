@@ -3,11 +3,22 @@
 import React, { useState, useEffect } from "react"; 
 import styles from "./navbar.module.scss";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 
 function page() {
   const [isMenuOpen, setIsMenuOpen] = useState(false); // State to manage menu open/close
+  const router = useRouter();
 
-  
+  // Close the menu and navigate after a short delay
+  const closeMenuAndNavigate = (url) => {
+    setIsMenuOpen(false);
+    setTimeout(() => {
+      router.push(url); // Navigate to the new page
+    }, 200); // Adjust the delay as needed
+  };
+
+
+  //close menu on resize
   useEffect(() => {
     const handleResize = () => {
       if (window.innerWidth > 768) {
@@ -35,10 +46,10 @@ function page() {
   onClick={() => setIsMenuOpen(!isMenuOpen)} // Toggle menu open/close
     >
       {/* Your navigation links here */}
-      <Link href="/about" className={styles.link} onClick={() => setIsMenuOpen(false)} >
+      <Link href="/about" className={styles.link} onClick={() => closeMenuAndNavigate("/about")} >
         about
       </Link>
-      <Link href="/work" className={styles.link} onClick={() => setIsMenuOpen(false)} >
+      <Link href="/work" className={styles.link} onClick={() => closeMenuAndNavigate("/work")} >
         work
       </Link>
       {/* <Link href="/resume" className={styles.link}>
