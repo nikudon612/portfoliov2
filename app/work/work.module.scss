@@ -137,18 +137,41 @@
       width: auto;
     }
     .img_container {
-      width: 50%;
-      height: 50%;
+      width: 75%;
+      // height: 50%;
       display: flex;
     }
     .project {
       width: 100%;
       padding-bottom: 75px;
     }
+    .img {
+      height: 100%!important;
+    }
     .link {
       display: flex!important;
       flex-direction: column;
       align-items: center;
+    }
+    .title {
+      width: 100%;
+      padding-left: 65px;
+    }
+    .text {
+      padding-left: 65px;
+      padding-right: 125px;
+      font-size: 10px;
+    }
+  }
+  
+}
+
+@media (max-width: 420px) {
+  .work {
+    .img_container {
+      width: 50%;
+      height: 50%;
+      display: flex;
     }
     .title {
       width: 100%;
