@@ -30,8 +30,6 @@ function projects() {
     },
   ];
 
-  const easeIn = [0.6, 0.05, -0.01, 0.9];
-
   return (
     <div className={styles.project_container}>
       <AnimatePresence>
@@ -60,7 +58,11 @@ function projects() {
                   src={item.img}
                   alt="proj img"
                   className={styles.img}
-                  fill={true}
+                  // fill={true}
+                  height={500}
+                  width={300}
+                  layout="responsive" // Set the layout to responsive
+
                 />
               </div>
               <div className={styles.title}>{item.name}</div>
