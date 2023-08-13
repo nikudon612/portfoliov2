@@ -39,13 +39,23 @@
   }
 
   .polaroid {
-    max-width: 300px; /* Adjust the image max width for smaller screens */
-    max-height: 250px; /* Adjust the image max height for smaller screens */
+    max-width: 500px; /* Adjust the image max width for smaller screens */
+    max-height: 375px; /* Adjust the image max height for smaller screens */
   }
 }
 
 @media (max-width: 717px) {
   .about {
     // padding: 2rem;
+  }
+}
+
+@media (max-width: 575px) {
+  .text {
+    padding: 20px 20px;
+  }
+  .polaroid {
+    max-width: 300px;
+    max-height: 225px;
   }
 }
