@@ -102,6 +102,7 @@
   }
 }
 
+
 @media (max-width: 575px) {
   .work {
     // padding: 0 1rem; /* Adjust padding for smaller screens */
@@ -110,76 +111,54 @@
   }
 
   .img_container {
-    width: 300px; /* Make the image container full width */
-    height: auto; /* Allow the image container to adjust height based on the image */
-  }
+    // width: 100%; /* Make the image container full width */
+    // width: 250px;
+    height: 250px;
+   }
 
   .project {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     padding: 20px; /* Adjust padding for smaller screens */
   }
 
   .title {
     font-size: 16px; /* Adjust font size for titles */
-    width: 100%; /* Match the title width to the image width */
-    text-align: center; /* Center the text */
-    margin-top: 10px; /* Add some space between image and title */
   }
 
   .text {
     font-size: 12px; /* Adjust font size for text */
-    width: 100%; /* Match the text width to the image width */
-    text-align: center; /* Center the text */
-    margin-top: 10px; /* Add some space between title and text */
+    width: 100%; /* Make the text container full width */
   }
 }
 
 @media (max-width: 535px) {
-  .img_container {
-    width: 200px; /* Set the image container width to 300px */
-    height: auto; /* Allow the image container to adjust height based on the image */
+  .work {
+    .project_container {
+      width: auto;
+    }
+    .img_container {
+      width: 50%;
+      height: 50%;
+      display: flex;
+    }
+    .project {
+      width: 100%;
+    }
+    .link {
+      display: flex!important;
+      flex-direction: column;
+      align-items: center;
+    }
+    .title {
+      width: 100%;
+      padding-left: 125px;
+    }
+    .text {
+      padding-left: 125px;
+      padding-right: 125px;
+      font-size: 10px;
+    }
   }
+  
 }
 
 
-// @media (max-width: 575px) {
-//   .work {
-//     // padding: 0 1rem; /* Adjust padding for smaller screens */
-//     max-height: auto;
-//     padding-bottom: 100px;
-//   }
-
-//   .img_container {
-//     // width: 100%; /* Make the image container full width */
-//     // width: 250px;
-//     height: 250px;
-//    }
-
-//   .project {
-//     padding: 20px; /* Adjust padding for smaller screens */
-//   }
-
-//   .title {
-//     font-size: 16px; /* Adjust font size for titles */
-//   }
-
-//   .text {
-//     font-size: 12px; /* Adjust font size for text */
-//     width: 100%; /* Make the text container full width */
-//   }
-// }
-
-// @media (max-width: 535px) {
-//   .img_container {
-//     width: 75%;
-//     height: 250px;
-//   }
-//   .project {
-//     width: 75%;
-//   }
-//   .title {
-//     width: 75%;
-//   }
-// }
