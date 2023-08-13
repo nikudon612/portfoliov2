@@ -33,6 +33,7 @@
 
     .img {
       object-fit: cover;
+      height: 100%!important;
       transition: opacity 0.3s ease-in-out;
     }
 
