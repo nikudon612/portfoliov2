@@ -73,7 +73,7 @@ function page() {
       </Link> */}
       </div>
       <div
-        className={`${styles.hamburger} ${isMenuOpen ? styles.active : ""}`}
+        className={`${styles.hamburger} ${isMenuOpen ? styles.active : ""} ${styles.desktopHidden}`}
         onClick={() => setIsMenuOpen(!isMenuOpen)} // Toggle menu open/close
       >
         <span className={styles.line}></span>
