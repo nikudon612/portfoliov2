@@ -12,6 +12,7 @@ function page() {
   // Close the menu and navigate after a short delay
   const closeMenuAndNavigate = (url: string) => {
     setIsMenuOpen(false);
+    console.log("closeMenuAndNavigate")
     setTimeout(() => {
       router.push(url); // Navigate to the new page
     }, 200); // Adjust the delay as needed
