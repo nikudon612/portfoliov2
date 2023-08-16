@@ -12,10 +12,22 @@ function page() {
   // Close the menu and navigate after a short delay
   const closeMenuAndNavigate = (url: string) => {
     setIsMenuOpen(false);
-    console.log("closeMenuAndNavigate")
+    console.log("closeMenuAndNavigate");
     setTimeout(() => {
       router.push(url); // Navigate to the new page
     }, 200); // Adjust the delay as needed
+  };
+
+  const handleLinkClick = (url) => (event) => {
+    event.stopPropagation(); // Prevent event propagation
+    closeMenuAndNavigate(url);
+  };
+
+  const handleDesktopNavbarClick = () => {
+    if (window.innerWidth > 768) {
+      return; // Do nothing for desktop screens
+    }
+    setIsMenuOpen(!isMenuOpen); // Toggle menu for mobile screens
   };
 
   //close menu on resize
@@ -43,15 +55,11 @@ function page() {
       <div
         className={`${styles.links} ${isMenuOpen ? `${styles.active}` : ""}`}
         id="navLinks"
-        onClick={() => setIsMenuOpen(!isMenuOpen)} // Toggle menu open/close
+        onClick={handleDesktopNavbarClick} // Use the modified click handler
       >
         {/* Your navigation links here */}
         {isMenuOpen && (
-          <Link
-            href="/"
-            className={styles.link}
-            onClick={() => closeMenuAndNavigate("/")}
-          >
+          <Link href="/" className={styles.link} onClick={handleLinkClick("/")}>
             Home
           </Link>
         )}
@@ -74,7 +82,9 @@ function page() {
       </Link> */}
       </div>
       <div
-        className={`${styles.hamburger} ${isMenuOpen ? styles.active : ""} ${styles.desktopHidden}`}
+        className={`${styles.hamburger} ${isMenuOpen ? styles.active : ""} ${
+          styles.desktopHidden
+        }`}
         onClick={() => setIsMenuOpen(!isMenuOpen)} // Toggle menu open/close
       >
         <span className={styles.line}></span>
