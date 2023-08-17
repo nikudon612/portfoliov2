@@ -18,7 +18,7 @@ function page() {
     }, 200); // Adjust the delay as needed
   };
 
-  const handleLinkClick = (url) => (event) => {
+  const handleLinkClick = (url: any) => (event: any) => {
     event.stopPropagation(); // Prevent event propagation
     closeMenuAndNavigate(url);
   };
