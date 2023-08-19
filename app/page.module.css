@@ -32,23 +32,37 @@
   font-size: 40px;
   font-weight: 400;
 }
+.intro::selection {
+  background-color: var(--olive);
+}
 .name {
   font-weight: 700;
   font-size: larger;
+}
+.name::selection {
+  background-color: var(--olive);
 }
 .period {
   font-weight: 400;
   font-size: larger;
   color: var(--olive);
 }
+.period::selection {
+  background-color: var(--olive);
+}
 
 .title_container {
   padding-top: 30px;
 }
-
+.title_container::selection {
+  background-color: var(--olive);
+}
 .title {
   color: var(--olive);
   font-weight: 900 !important;
+}
+.title::selection {
+  background-color: var(--olive);
 }
 
 /* .image {

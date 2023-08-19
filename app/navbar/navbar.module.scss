@@ -44,8 +44,11 @@
     transition: 0.3s ease-in-out;
   }
 }
+.link::selection {
+  background-color: var(--olive);
+}
 
-//fadein 
+//fadein
 .links.fadein {
   opacity: 0;
   transition: opacity 0.3s ease-in-out;
@@ -70,7 +73,7 @@
   padding: 5px 0;
 }
 .x-icon {
-  padding: 10px 0!important;
+  padding: 10px 0 !important;
 }
 .line {
   width: 30px;
@@ -143,10 +146,8 @@
       .active {
         padding: 10px 0px;
       }
-      
     }
   }
- 
 
   .x-icon {
     display: flex;

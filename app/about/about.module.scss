@@ -21,6 +21,9 @@
   padding: 20px 40px;
   line-height: 1.5;
 }
+.text::selection {
+  background-color: var(--olive);
+}
 .polaroid {
   padding-bottom: 20px;
 }
@@ -31,6 +34,9 @@
     color: var(--olive);
     transition: 0.3s ease-in-out;
   }
+}
+.link::selection {
+  background-color: var(--olive);
 }
 
 @media (max-width: 900px) {

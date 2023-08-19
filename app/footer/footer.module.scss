@@ -8,7 +8,6 @@
   width: 100%;
   height: 100px;
   padding-top: 20px;
-
 }
 .socials {
   display: flex;
@@ -21,13 +20,17 @@
 
 .links {
   margin: 0 30px;
+  font-size: 14px;
   &:hover {
     color: #aaaaaa !important;
     transition: 0.3s ease-in-out;
   }
 }
+.links::selection {
+  background-color: var(--olive);
+}
 
-@media (max-width: 717px){
+@media (max-width: 717px) {
   .footer {
     // padding-top: 100px;
     padding-bottom: 50px;
