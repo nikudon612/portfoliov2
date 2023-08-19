@@ -18,7 +18,7 @@ function projects() {
       name: "The Dinner Party",
       desc: "Frontend UI & Backend API integration",
       img: "/dinnerparty.png",
-      link: "https://thedinnerparty.forerunnerventures.com/",
+      link: "https://www.forerunnerventures.com/thedinnerparty",
       key: 2,
     },
     {
@@ -62,7 +62,6 @@ function projects() {
                   height={500}
                   width={300}
                   layout="responsive" // Set the layout to responsive
-
                 />
               </div>
               <div className={styles.title}>{item.name}</div>
