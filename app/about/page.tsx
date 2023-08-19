@@ -56,7 +56,7 @@ function about() {
             I'm a full-stack software engineer specializing in Next.js and
             TypeScript. Currently at{" "}
             <Link href="https://www.perpetualny.com/" className={styles.link}>
-              Perpetaul
+              Perpetual
             </Link>
             . Collaborating with designers to bring their visions to life
             excites me, I thrive on building scalable, fluid, and performant
