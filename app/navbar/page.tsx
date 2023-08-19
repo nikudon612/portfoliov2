@@ -58,25 +58,31 @@ function page() {
         onClick={handleDesktopNavbarClick} // Use the modified click handler
       >
         {/* Your navigation links here */}
-        {isMenuOpen && (
-          <Link href="/" className={styles.link} onClick={handleLinkClick("/")}>
-            Home
+        <div className={styles.mobile}>
+          {isMenuOpen && (
+            <Link
+              href="/"
+              className={styles.link}
+              onClick={handleLinkClick("/")}
+            >
+              Home
+            </Link>
+          )}
+          <Link
+            href="/about"
+            className={styles.link}
+            onClick={() => closeMenuAndNavigate("/about")}
+          >
+            About
           </Link>
-        )}
-        <Link
-          href="/about"
-          className={styles.link}
-          onClick={() => closeMenuAndNavigate("/about")}
-        >
-          About
-        </Link>
-        <Link
-          href="/work"
-          className={styles.link}
-          onClick={() => closeMenuAndNavigate("/work")}
-        >
-          Work
-        </Link>
+          <Link
+            href="/work"
+            className={styles.link}
+            onClick={() => closeMenuAndNavigate("/work")}
+          >
+            Work
+          </Link>
+        </div>
         {/* <Link href="/resume" className={styles.link}>
         resume
       </Link> */}

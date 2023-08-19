@@ -138,11 +138,31 @@
 @media (max-width: 768px) {
   .navbar {
     align-items: center;
+    .links {
+      text-align: left !important;
+      // align-items: flex-start; /* Align content to the left */
+      .mobile {
+        display: flex;
+        flex-direction: column;
+      }
+      > .link {
+        text-align: left; /* Align individual link text to the left */
+        margin: 20px 30px !important;
+        font-size: 24px !important;
+      }
+      .link {
+        margin: 20px 30px !important;
+        font-size: 24px !important;
+      }
+      .active {
+      }
+    }
     .hamburger {
       display: flex;
       // padding-top: 20px;
       padding: 0px;
       padding-right: 40px;
+
       .active {
         padding: 10px 0px;
       }
