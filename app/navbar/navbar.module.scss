@@ -138,12 +138,20 @@
 @media (max-width: 768px) {
   .navbar {
     align-items: center;
+
     .links {
       text-align: left !important;
       // align-items: flex-start; /* Align content to the left */
       .mobile {
         display: flex;
         flex-direction: column;
+      }
+      .mobileNavSocials {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        margin-top: 20px;
       }
       > .link {
         text-align: left; /* Align individual link text to the left */

@@ -4,6 +4,7 @@ import React, { useState, useEffect } from "react";
 import styles from "./navbar.module.scss";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
+import { Instagram, GitHub, Linkedin } from "react-feather";
 
 function page() {
   const [isMenuOpen, setIsMenuOpen] = useState(false); // State to manage menu open/close
@@ -83,6 +84,31 @@ function page() {
             Work
           </Link>
         </div>
+        {isMenuOpen && (
+          <div className={styles.mobileNavSocials}>
+            <Link
+              href="https://instagram.com/wavvyboi?igshid=OGQ5ZDc2ODk2ZA=="
+              target="__blank"
+              rel="noreferrer"
+            >
+              <Instagram color="#333333" size={32} style={{ margin: "5px" }} />
+            </Link>
+            <Link
+              href="https://github.com/nikudon612"
+              target="__blank"
+              rel="noreferrer"
+            >
+              <GitHub color="#333333" size={32} style={{ margin: "5px" }} />
+            </Link>
+            <Link
+              href="https://www.linkedin.com/in/nicholasbechtel/"
+              target="__blank"
+              rel="noreferrer"
+            >
+              <Linkedin color="#333333" size={32} style={{ margin: "5px" }} />
+            </Link>
+          </div>
+        )}
         {/* <Link href="/resume" className={styles.link}>
         resume
       </Link> */}

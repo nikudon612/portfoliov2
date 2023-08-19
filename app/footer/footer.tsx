@@ -16,11 +16,18 @@ function footer() {
         </Link>
         <Link
           href="https://www.linkedin.com/in/nicholasbechtel/"
+          target="__blank"
+          rel="noreferrer"
           className={styles.links}
         >
           LinkedIn
         </Link>
-        <Link href="https://github.com/nikudon612" className={styles.links}>
+        <Link
+          href="https://github.com/nikudon612"
+          target="__blank"
+          rel="noreferrer"
+          className={styles.links}
+        >
           GitHub
         </Link>
       </div>

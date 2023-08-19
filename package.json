@@ -13,11 +13,12 @@
     "@types/react": "18.2.18",
     "@types/react-dom": "18.2.7",
     "framer-motion": "^10.15.0",
+    "homepage": ".",
     "next": "13.4.12",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "typescript": "5.1.6",
-    "homepage": "."
+    "react-feather": "^2.0.10",
+    "typescript": "5.1.6"
   },
   "devDependencies": {
     "sass": "^1.64.2"
