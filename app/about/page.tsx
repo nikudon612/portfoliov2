@@ -31,13 +31,13 @@ function about() {
               },
             }}
           >
-            <Image
+            {/* <Image
               src="/polaroid.png"
               alt="Fujifilm 100c"
               width={750}
               height={550}
               className={styles.polaroid}
-            />
+            /> */}
           </motion.div>
 
           <motion.div
@@ -121,7 +121,6 @@ function about() {
                 duration: 1,
                 delay: 1.25,
                 ease: [0.22, 1, 0.36, 1],
-
               },
             }}
           >
