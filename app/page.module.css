@@ -15,8 +15,7 @@
   align-items: center;
   padding: 6rem;
   min-height: 100vh;
-  margin-bottom: 200px;
-  
+  /* margin-bottom: 200px; */
 }
 .center:hover {
   cursor: default;
@@ -43,13 +42,13 @@
   color: var(--olive);
 }
 
-.title_container{
+.title_container {
   padding-top: 30px;
 }
 
 .title {
   color: var(--olive);
-  font-weight: 900!important;
+  font-weight: 900 !important;
 }
 
 /* .image {
@@ -123,7 +122,6 @@
   line-height: 1.5;
   max-width: 30ch;
 }
-
 
 .logo {
   position: relative;
@@ -225,28 +223,25 @@
 
 @media (max-width: 1550px) {
   .title_container {
-    max-width: 350px!important;
-    width: 350px!important;
+    max-width: 350px !important;
+    width: 350px !important;
   }
-  
 }
 
 @media (max-width: 1112px) {
-    .intro {
-      max-width: 300px!important;
-      width: 300px!important;
-    }
-    .title_container {
-      max-width: 350px!important;
-      width: 350px!important;
-    }
-  
+  .intro {
+    max-width: 300px !important;
+    width: 300px !important;
+  }
+  .title_container {
+    max-width: 350px !important;
+    width: 350px !important;
+  }
 }
-
 
 @media (max-width: 900px) {
   .center {
-    flex-direction: column!important;
+    flex-direction: column !important;
   }
   .main {
     padding-top: 250px;
