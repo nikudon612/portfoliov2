@@ -52,7 +52,13 @@ function page() {
   return (
     <div className={styles.navbar}>
       <Link href="/" className={styles.logo}>
-        <Image src="/favicon.ico" alt="logo" width="25" height="25" />
+        <Image
+          src="/favicon.ico"
+          alt="logo"
+          width="25"
+          height="25"
+          className={styles.circle}
+        />
       </Link>
       <div
         className={`${styles.links} ${isMenuOpen ? `${styles.active}` : ""}`}
