@@ -3,6 +3,7 @@
 import React, { useState, useEffect } from "react";
 import styles from "./navbar.module.scss";
 import Link from "next/link";
+import Image from "next/image";
 import { useRouter } from "next/navigation";
 import { Instagram, GitHub, Linkedin } from "react-feather";
 
@@ -51,7 +52,7 @@ function page() {
   return (
     <div className={styles.navbar}>
       <Link href="/" className={styles.logo}>
-        NB
+        <Image src="/favicon.ico" alt="logo" width="25" height="25" />
       </Link>
       <div
         className={`${styles.links} ${isMenuOpen ? `${styles.active}` : ""}`}
