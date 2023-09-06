@@ -65,20 +65,7 @@ function about() {
             dedication to crafting exceptional user experiences drives me to
             deliver innovative and visually appealing web applications.
           </motion.div>
-          {/* <motion.div
-            className={styles.text}
-            initial={{ opacity: 0, y: -20 }}
-            animate={{
-              opacity: 1,
-              y: 0,
-              transition: {
-                duration: 1,
-                delay: 1,
-              },
-            }}
-          >
-            More info about my background~
-          </motion.div> */}
+
           <motion.div
             className={styles.text}
             initial={{ opacity: 0, y: -20 }}
@@ -127,18 +114,6 @@ function about() {
             Otherwise, I enjoy a Matcha latte, or if there's a swell, surfing at
             Rockaway Beach. ...yes, NYC actually has decent surf!
           </motion.div>
-          {/* <motion.div
-            className={styles.text}
-            initial={{ opacity: 0, y: -20 }}
-            animate={{
-              opacity: 1,
-              y: 0,
-              transition: {
-                duration: 1,
-                delay: 1.5,
-              },
-            }}
-          ></motion.div> */}
         </div>
       </div>
     </PageWrapper>
