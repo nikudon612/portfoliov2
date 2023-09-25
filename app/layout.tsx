@@ -20,21 +20,21 @@ export const metadata: Metadata = {
   title: "Nick Bechtel - Software Engineer",
   description: "Nick Bechtel - Software Engineer - Portfolio",
   openGraph: {
-    title: "Next.js",
-    description: "The React Framework for the Web",
+    title: "Nick Bechtel",
+    description: "Nick Bechtel Software Engineer - Portfolio",
     url: "https://www.nickbechtel.com/",
-    siteName: "Next.js",
+    siteName: "Nick Bechtel",
     images: [
       {
-        url: "https://www.nickbechtel.com/og.png",
+        url: "typing.gif",
         width: 800,
         height: 600,
       },
       {
-        url: "https://nextjs.org/og-alt.png",
+        url: "typing.gif",
         width: 1800,
         height: 1600,
-        alt: "My custom alt",
+        alt: "coding gif",
       },
     ],
     locale: "en_US",
