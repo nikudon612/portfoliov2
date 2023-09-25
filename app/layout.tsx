@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   description: "Nick Bechtel - Software Engineer - Portfolio",
   openGraph: {
     title: "Nick Bechtel",
-    description: "Nick Bechtel Software Engineer - Portfolio",
+    description: "Software Engineer - Portfolio",
     url: "https://www.nickbechtel.com/",
     siteName: "Nick Bechtel",
     images: [
