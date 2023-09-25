@@ -18,7 +18,28 @@ export const metadata: Metadata = {
     apple: "/apple-touch-icon.png",
   },
   title: "Nick Bechtel - Software Engineer",
-  description: "Nick Bechtel - Software Engineer - Portfolio - Resume",
+  description: "Nick Bechtel - Software Engineer - Portfolio",
+  openGraph: {
+    title: "Next.js",
+    description: "The React Framework for the Web",
+    url: "https://www.nickbechtel.com/",
+    siteName: "Next.js",
+    images: [
+      {
+        url: "https://www.nickbechtel.com/og.png",
+        width: 800,
+        height: 600,
+      },
+      {
+        url: "https://nextjs.org/og-alt.png",
+        width: 1800,
+        height: 1600,
+        alt: "My custom alt",
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
 };
 
 export default function RootLayout({
