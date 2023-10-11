@@ -26,12 +26,12 @@ export const metadata: Metadata = {
     siteName: "Nick Bechtel",
     images: [
       {
-        url: "typing.gif",
+        url: "Nick.png",
         width: 800,
         height: 600,
       },
       {
-        url: "typing.gif",
+        url: "Nick.png",
         width: 1800,
         height: 1600,
         alt: "coding gif",

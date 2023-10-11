@@ -8,6 +8,13 @@ import { motion, AnimatePresence } from "framer-motion";
 function projects() {
   const projects = [
     {
+      name: "Adobe | Content Credentials",
+      desc: "UX/UI Redesign, Frontend Development ",
+      img: "/cr2.mov",
+      link: "https://www.contentcredentials.org/",
+      key: 0,
+    },
+    {
       name: "Forerunner Ventures",
       desc: "UX/UI Redesign, Frontend Development and Backend API integration",
       img: "/forerunner.png",
@@ -50,19 +57,31 @@ function projects() {
             <Link
               href={item.link}
               target="__blank"
-              rel="nonferrer"
+              rel="noopener noreferrer"
               className={styles.link}
             >
               <div className={styles.img_container}>
-                <Image
-                  src={item.img}
-                  alt="proj img"
-                  className={styles.img}
-                  // fill={true}
-                  height={500}
-                  width={300}
-                  layout="responsive" // Set the layout to responsive
-                />
+                {/* Conditional rendering based on file extension */}
+                {item.img.endsWith(".mov") || item.img.endsWith(".mp4") ? (
+                  <video
+                    className={`${styles.img} ${styles.video}`}
+                    autoPlay
+                    playsInline
+                    loop
+                    muted
+                  >
+                    <source src={item.img} type="video/mp4" />{" "}
+                  </video>
+                ) : (
+                  <Image
+                    src={item.img}
+                    alt="proj img"
+                    className={styles.img}
+                    height={500}
+                    width={300}
+                    layout="responsive"
+                  />
+                )}
               </div>
               <div className={styles.title}>{item.name}</div>
               <div className={styles.text}>{item.desc}</div>
