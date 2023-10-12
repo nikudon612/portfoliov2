@@ -182,24 +182,27 @@
   .work {
     .link {
       .img {
-        height: 150px !important;
+        // height: 150px !important;
       }
     }
     .img_container {
-      width: 50%;
-      height: 50%;
+      width: 66%;
+      // height: 33%;
       display: flex;
     }
     .title {
       width: 100%;
-      padding-left: 125px;
+      padding-left: 85px;
       font-size: 20px;
     }
 
     .text {
-      padding-left: 125px;
+      padding-left: 85px;
       padding-right: 125px;
       font-size: 10px;
     }
   }
+}
+
+@media only screen and (max-width: 354px) {
 }
