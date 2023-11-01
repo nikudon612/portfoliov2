@@ -53,8 +53,8 @@ function about() {
               },
             }}
           >
-            I'm a full-stack software engineer specializing in Next.js and
-            TypeScript. Currently at{" "}
+            I'm a full-stack software engineer specializing in NextJS, Svelte,
+            and TypeScript. Currently working with{" "}
             <Link href="https://www.perpetualny.com/" className={styles.link}>
               Perpetual
             </Link>
@@ -83,11 +83,11 @@ function about() {
             Outside of work, I like to spend as much time as I can away from my
             laptop, traveling and getting outside with my camera. I most enjoy
             shooting with one of many older film cameras, such as my Canon A1 or
-            Mamiya RZ67. Most of the 2010s I spent as a freelance photographer
-            shooting editorials, fashion, interiors and real-estate. I apply
-            that critical and creative mindset from my photography to my work as
-            an engineer. If you feel inclined to see my photo-work, you can do
-            so on{" "}
+            Mamiya RZ67. A majority of the 2010s I spent as a freelance
+            photographer shooting editorials, fashion, interiors and
+            real-estate. I apply that critical and creative mindset from my
+            photography to my work as an engineer. If you feel inclined to see
+            my photo-work, you can do so on{" "}
             <Link
               href="https://instagram.com/wavvyboi?igshid=OGQ5ZDc2ODk2ZA=="
               target="__blank"
