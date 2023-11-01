@@ -96,6 +96,12 @@
   flex-direction: row;
 }
 
+@media only screen and (min-width: 300px) {
+  .project_container {
+    flex-direction: column;
+  }
+}
+
 @media only screen and (max-width: 1717px) {
   .work {
     padding-top: 100px;
