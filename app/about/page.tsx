@@ -111,7 +111,7 @@ function about() {
               },
             }}
           >
-            Otherwise, I enjoy a Matcha latte, or if there's a swell, surfing at
+            Otherwise, I enjoy a Matcha latte, Bouldering, or if there's a swell, surfing at
             Rockaway Beach. ...yes, NYC actually has decent surf!
           </motion.div>
         </div>

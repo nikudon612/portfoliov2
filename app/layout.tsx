@@ -55,7 +55,10 @@ export default function RootLayout({
     >
       <body>
         <Navbar />
-        {children}
+        <div className="page-container">
+          {/* Wrap the children in the content-wrap class */}
+          {children}
+        </div>
         <Footer />
       </body>
     </html>
