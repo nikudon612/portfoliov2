@@ -11,7 +11,7 @@ function projects() {
       name: "Adobe | Content Credentials",
       desc: "UX/UI Redesign, Frontend Development ",
       img: "/cr2.mov",
-      link: "https://www.contentcredentials.org/",
+      link: "https://contentcredentials.org/",
       key: 0,
     },
     {
