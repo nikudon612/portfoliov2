@@ -8,32 +8,39 @@ import { motion, AnimatePresence } from "framer-motion";
 function projects() {
   const projects = [
     {
-      name: "Adobe | Content Credentials",
-      desc: "UX/UI Redesign, Frontend Development ",
-      img: "/cr2.mov",
-      link: "https://www.contentcredentials.org/",
+      name: "Adobe | Content Authenticiy Initiative",
+      desc: "UX/UI Redesign, Frontend & Backend Development",
+      img: "/CAI_Video.mov",
+      link: "https://www.contentauthenticity.org/",
       key: 0,
     },
     {
-      name: "Forerunner Ventures",
-      desc: "UX/UI Redesign, Frontend Development and Backend API integration",
-      img: "/forerunner.png",
-      link: "https://www.forerunnerventures.com/",
+      name: "Adobe | Content Credentials",
+      desc: "UX/UI Redesign, Frontend & Backend Development ",
+      img: "/cr2.mov",
+      link: "https://www.contentcredentials.org/",
       key: 1,
     },
     {
-      name: "The Dinner Party",
+      name: "Forerunner Ventures | Website Redesign",
+      desc: "UX/UI Redesign, Frontend Development and Backend API integration",
+      img: "/forerunner.png",
+      link: "https://www.forerunnerventures.com/",
+      key: 2,
+    },
+    {
+      name: "Forerunner Ventures | The Dinner Party",
       desc: "Frontend UI & Backend API integration",
       img: "/dinnerparty.png",
       link: "https://www.forerunnerventures.com/thedinnerparty",
-      key: 2,
+      key: 3,
     },
     {
       name: "Dept. of Music",
       desc: "UX/UXI design, Frontend Development and Backend API integration",
       img: "/dom.png",
       link: "https://www.deptofmusic.com/",
-      key: 3,
+      key: 4,
     },
   ];
 
